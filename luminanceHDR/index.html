@@ -69,7 +69,7 @@ to align the images in a decent way (weighted means):
 <u><b>⚠ ⚠ ⚠ PROBLEM ⚠ ⚠ ⚠</b></u>
 </p>
 <p style="font-family:'Comic Sans MS', Arial, Helvetica; color:red; font-size: 30px;">
-I didn't managed to create an HDRI after testing all the possible parameters combinations. ☹ 
+I didn't managed to create an HDRI after testing all the possible parameters combinations. 🙁 
 </p>
 <p style="font-family:'Comic Sans MS', Arial, Helvetica; color:red; font-size: 30px;">
 So I might try creating an HDRI using a homemade recipe... <br>
@@ -90,11 +90,67 @@ TODO: Managing to obtain an HDRI, then showing some tone-mapping results
 <p style="font-family:'Comic Sans MS', Arial, Helvetica; color:white; font-size: 30px;">
 ======================================
 </p>
+<p style="font-family:'Comic Sans MS', Arial, Helvetica; color:orange; font-size: 40px;">
+<b>~ (3°) RELIEF SHADING 😉 ~</b>
+</p>
+
+<p style="font-family:'Comic Sans MS', Arial, Helvetica; color:white; font-size: 30px;">
+Well, as you may guess, using a tool in a conventional way is not very "funny". So let's 
+try something interesting. Most of you had to manipulate Digital Terrain Model (DTM) like
+this one for exemple:
+</p>
+<img width="100%" alt="MNT_8bits" src="mnt_draix_8bits.png"><br>
+
+<p style="font-family:'Comic Sans MS', Arial, Helvetica; color:white; font-size: 30px;">
+One of the most common way to vizualize a DTM is by simulating a top left light source 
+in order to create some shadows. They are many ways to perform it, one of the easiest way 
+is by combinating the X ant Y gradients of the DTM, like this:
+</p>
+<img width="100%" alt="MNT_estompage" src="mnt_2_ombre.png"><br>
+
+<p style="font-family:'Comic Sans MS', Arial, Helvetica; color:white; font-size: 30px;">
+Yet, one would like to add more complexe shading effects un order to simulate some 
+physics (like ambiant occlusion for example). Luminance HDR does NOT do that... but 
+we can always test some stuffs, like the Mantiuk'06 tone mapping: 
+</p>
+<img width="100%" alt="capture_1" src="ss1.png"><br>
+<img width="100%" alt="capture_2" src="ss2.png"><br>
+<img width="100%" alt="capture_3" src="ss3.png"><br>
+
+<p style="font-family:'Comic Sans MS', Arial, Helvetica; color:white; font-size: 30px;">
+After merging the shaded (left) and the tone-mapped (right) DTM we could obtain some 
+interesting result (bottom) showing some "new" DTM structures:
+</p>
+<img width="48%" alt="MNT_estompage" src="mnt_2_ombre.png">
+<img width="48%" alt="MNT_hdr" src="mnt_2_hdr.jpg"><br>
+<img width="100%" alt="MNT_ombre" src="mnt2_estomp.png"><br>
+
+<p style="font-family:'Comic Sans MS', Arial, Helvetica; color:white; font-size: 30px;">
+Here is another example:
+</p>
+<img width="100%" alt="MNT_8bit" src="mnt_brusquet_8bits.png"><br>
+<img width="100%" alt="MNT_estompage" src="mnt1_ombre.png"><br>
+<img width="100%" alt="MNT_estompage" src="mnt1_hdr.jpg"><br>
+<img width="100%" alt="MNT_ombre" src="mnt1_estomp.png"><br>
+
+<p style="font-family:'Comic Sans MS', Arial, Helvetica; color:white; font-size: 30px;">
+Of course, it isn't as pretty as "real" ambiant occlusion:
+</p>
+<img width="100%" alt="MNT_OA" src="illustration1.png"><br>
+
+<p style="font-family:'Comic Sans MS', Arial, Helvetica; color:white; font-size: 30px;">
+I hope you enjoyed this little idea of using tone mapping for a purpose it wasn't designed 
+for... Don't hesitate to contact me if you have questions, ideas or any kind of comments.
+</p>
+
+<p style="font-family:'Comic Sans MS', Arial, Helvetica; color:white; font-size: 30px;">
+======================================
+</p>
 </div>
 
 <div align="right">
 <p style="font-family:'Comic Sans MS', Arial, Helvetica; color:orange; font-size: 20px;">
-<b>Lâmân LELÉGARD → 13/04/2020 ~ 22h00</b>
+<b>Lâmân LELÉGARD → 13/04/2020 ~ 23h00</b>
 </p>
 </div>
 </body>
